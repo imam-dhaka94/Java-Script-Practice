@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational-Operator & Logical-Operator</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VKYdMMnamb4?si=oysyq-M2_qVeGVFa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+
+
+    <script>
+
+        // Relational Operator: >, >=, <, <=, 
+        // ==(just value will be checked), 
+        // ===(value and data type both will be checked), 
+        // !=(just value will be checked), 
+        // !==(just value will be checked)
+        document.write((20>=20) + "<br/>");
+        document.write((25>20) + "<br/>");
+        document.write((20=="20") + "<br/>");// ==(just value will be checked)
+        document.write((20==="20")+ "<br/>");//===(value and data type both will be checked)
+        document.write((20!="22") + "<br/>");// ==(just value will be checked)
+        document.write((20!=="22") + "<br/>" + "<br/>" + "<br/>");// !==(just value will be checked)
+
+        //Logical Operator: 
+        //&&(and: all condition have to be true, then output will be true), 
+        //||(or: if 1condition is true then output will be true), 
+        //!(not: if condition is true then output will be false. ((!not) true means false))
+        document.write(((20>=20)&&(30>20)) + "<br/>");//&&(and: all condition have to be true, then output will be true)
+        document.write(((20>=20)&&(30<20)) + "<br/>");
+        document.write(((20>=20)||(30<20)) + "<br/>");
+        document.write(!(30<20)); //!(not: if condition is false then output will be true. ((!not) false means true))
+        // document.write(!(20=20));
+
+    </script>
+    
+</body>
+</html>
