@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    
+
+    <script>
+        //user theke 3 ti number input niye Ternary operator er sahajje boro number nirnoy korte hobe
+    
+        var firstno = Number(prompt("Enter Your 1st no: "));
+        var secondno = Number(prompt("Enter Your 2nd no: "));
+        var thirdno = Number(prompt("Enter Your 3rd no: "));
+        var Result = firstno>secondno && firstno>thirdno ? firstno : secondno>firstno && secondno>thirdno ? secondno : thirdno;
+        document.write("Result= ".concat(Result));
+    </script>
+</body>
+</html>

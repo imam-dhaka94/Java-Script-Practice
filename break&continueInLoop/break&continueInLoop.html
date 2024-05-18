@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brek in loop</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/llRfCZIe2uY?si=asDaUphwnc5OoZKd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+
+
+    <script>
+        // for(var x=1; x<=100; x++){
+        //     //x==10 hole break hobe loop. if er condition true hole loop ar kaj korbe naa.
+        //     if(x==10){
+        //         break;
+        //     }
+        //     document.write(" ".concat(x) + "<br/>");
+        // }
+
+        for(var x=1; x<=100; x=x+1){
+            //x=10 print korbe tokhon abar if condition chek korbe, and loop ti break hobe. but the deffrence is print jodi if condition er age kore then 10 print kore loop ti break hobe. abar jodi if condition check korar pore print kore then 9 porjonto pirnt korbe.
+            document.write(" ".concat(x) + "<br/>");
+            if(x==10){
+                break;
+            }
+        }
+
+        document.write("end" + "<br/>"
+        );
+
+
+        //continue in loop: jokhon x=10 hobe then if er condition sotto hobe tai print na kore abar update part a chole jabe and x=11 hobe then if er condition check korbe dekhbe sotto na tai 11 print korbe. that means sotto hole print korbe na sotto na hole print korbe.
+        for(var x=1; x<=20; x++){
+            if(x==10){
+                continue;
+            }
+            document.write(" ".concat(x) )
+        }
+
+        document.write("end" + "<br/>"
+        );
+
+
+        //even number print
+        for(var x=1; x<=20; x++){
+            if(x%2==0){
+                continue;
+            }
+            document.write(" ".concat(x) )
+        }
+
+        document.write("end" + "<br/>"
+        );
+
+        //odd number print
+        for(var x=1; x<=20; x++){
+            if(x%2!=0){
+                continue;
+            }
+            document.write(" ".concat(x) )
+        }
+
+        document.write("end" + "<br/>"
+        );
+
+
+        
+    </script>
+</body>
+</html>
