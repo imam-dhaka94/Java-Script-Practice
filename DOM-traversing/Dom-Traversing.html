@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+</head>
+<body>
+    <div>
+        <ul class="studentAll">
+            <li class="stuedent-A">
+                Student A 
+            </li>
+            <li class="stuedent-B">
+                Student B
+            </li>
+            <li class="stuedent-C">
+                Student C
+            </li>
+            <li class="stuedent-D">
+                Student D
+            </li>
+        </ul>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8WGMULjnR94?si=BbnEdXlRdDGl9s8Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <script>
+        //downwords parent to children
+        var students = document.querySelector(".studentAll");
+        // var studentA = students.querySelectorAll("li")[0];
+        
+        
+        //or
+        var studentA = students.children[0];
+        studentA.style.border= "1px solid black";
+
+        //next sibling element select 
+        var studentB = studentA.nextElementSibling;
+        studentB.style.border= "1px solid yellow";
+        var studentD  = students.children[3];
+        studentD.style.border= "1px solid red";
+        // before sibling eliment select
+        var studentC = studentD.previousElementSibling;
+        studentC.style.border= "1px solid green";
+        // parent Element Select
+        var parent = students.parentElement;
+        parent.style.backgroundColor= "aqua";
+        parent.style.padding= "20px";
+        parent.style.margin= "20px";
+
+
+    </script>
+</body>
+</html>

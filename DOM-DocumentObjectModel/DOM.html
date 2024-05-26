@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM: Document Object Model</title>
+</head>
+<body>
+    <h1 id="heading1">Heading 1</h1>
+    <p id="pera">I am a peragraph</p>
+    <h1 id="heading2">Heading 2</h1>
+    <h2>only element</h2>
+    <h2 class="heading">Heading of a class</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MSf0Ip0hqRE?si=YFrtxWVUld-GlkDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+    <script>
+        var Myheading1 = document.getElementById("heading1");
+        Myheading1.innerHTML = "Hellow!";
+        document.getElementById("pera").innerHTML = "I am changed";
+        document.getElementById("heading2").innerHTML = "Goodbye Goodbye";
+        var heading = document.getElementsByTagName("h2")[0];
+        heading.innerHTML = "Selected by Tag Name";
+        document.getElementsByClassName("heading")[0].innerHTML = "Seleced by Class";
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat Html element by js</title>
+    <style>
+        #mydiv{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv" class="mydiv0">
+        <h1>Heading a </h1>
+        <h1>Heading b </h1>
+    </div><br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B3Q5X8r_ldw?si=2g7a5mZ0wv8ePYNa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script>
+        var heading3 = document.createElement("h1");
+        var text = document.createTextNode("This is Heading 3");
+        var myDiv = document.getElementById("mydiv");
+        heading3.appendChild(text);
+        myDiv.appendChild(heading3);
+        var heading0 = document.createElement("h1");
+        var text0 = document.createTextNode("This is Heading 0");
+        heading0.appendChild(text0);
+        var heading1 = document.getElementsByTagName("h1")[0];
+        myDiv.insertBefore(heading0, heading1);
+        myDiv.style.padding= "10px";//hwo to style add in element by js.
+        var heading2 = document.querySelectorAll("h1")[1];
+        myDiv.removeChild(heading2);
+
+
+        // document.getElementById("mydiv").appendChild(document.createElement("h1").appendChild(document.createTextNode("This is heading 3")));
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task8</title>
+</head>
+
+<body>
+    <script>
+        // function heighestScore(array) {
+        //     var score = new Array();
+        //     for (var x = 0; x <= 4; x++) {
+        //         score[x] = parseInt(prompt("Enter a num: "));
+        //         console.log(score[x]);
+        //     }
+        //     return score;
+
+        // }
+        // var heighestno = heighestScore();
+        // heighestno = score[0] > score[1] && score[0] > score[2] && score[0] > score[3] && score[0] > score[4] ? score[0] : score[1] > score[0] && score[1] > score[2] && score[1] > score[3] && score[1] > score[4] ? score[1] : score[2] > score[0] && score[2] > score[1] && score[2] > score[3] && score[2] > score[4] ? score[2] : score[3] > score[0] && score[3] > score[1] && score[3] > score[2] && score[3] > score[4] ? score[3] : score[4];
+
+        // console.log("The Heighest Score = ".concat(heighestno2));
+
+
+
+
+
+
+
+        function highestScore(score){
+            console.log(score);
+            var max = score[0];
+            for(var x=1; x<score.lenght; x++){
+                if(max>score[x]){
+                    max = score[x];
+                }
+            }
+            return max;
+        
+        }
+        var score = new Array()
+        for(var x=0; x<=4; x++){
+            score[x] = parseInt(prompt("Enter a no: "));
+        }
+        var maxScore = highestScore(score);
+        
+        
+        console.log("max score = ".concat(maxScore));
+    </script>
+</body>
+
+</html>

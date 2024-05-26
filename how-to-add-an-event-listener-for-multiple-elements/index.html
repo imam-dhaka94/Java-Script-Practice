@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener for multiple elements</title>
+</head>
+<body>
+    <h1>No Button isn't Clicked</h1>
+    <button class="mybutton">
+        Button 1
+    </button>
+    <button class="mybutton">
+        Button 2
+    </button>
+    <button class="mybutton">
+        Button 3
+    </button>
+    <button class="mybutton">
+        Button 4
+    </button>
+    <button class="mybutton">
+        Button 5
+    </button>
+    <button class="mybutton">
+        Button 6
+    </button> 
+    <p></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZY3dKomb5as?si=RRrUMssMK_D8DdwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script>
+        // var heading = document.querySelector("h1");
+        // var btn0 = document.querySelectorAll(".mybutton")[0];
+        // var btn1 = btn0.nextElementSibling;
+        // var btn2 = btn1.nextElementSibling;
+        // btn0.addEventListener("click", function(){
+        //     //button 1 er innerHtml er text (Button 1) ti (text variable) er moddhe thakbe.
+        //     var text = this.innerHTML;
+        //     //            button er text
+        //     heading.innerHTML= text + "is clicked";
+        // });
+
+        // btn1.addEventListener("click", function(){
+        //     var text = this.innerHTML;
+        //     heading.innerHTML= text + "is clicked";
+        // });
+
+        // btn2.addEventListener("click", function(){
+        //     var text = this.innerHTML;
+        //     heading.innerHTML= text + "is clicked";
+        // });
+
+
+        var heading = document.querySelector("h1");
+
+        var len = document.querySelectorAll(".mybutton").length;
+
+        for(var i=0; i<len; i++){
+            var btn = document.querySelectorAll(".mybutton")[i];
+            btn.addEventListener("click", function(){
+                text = this.innerHTML;
+                heading.innerHTML= text + "is clicked";
+            });
+        };
+
+        
+        
+    </script>
+</body>
+</html>

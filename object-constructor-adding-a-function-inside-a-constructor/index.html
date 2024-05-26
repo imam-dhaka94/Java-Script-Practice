@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rA9GOinuZmw?si=aLgUI9o00NZqHwEB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script>
+    
+        //how to create an object. and how to print a value of an object.
+        // var Student1 = {
+        //     Name : "Imam Hossain",
+        //     Age : [30, "years"],
+        //     Cgpa : 4.39,
+        //     lang : ["Bangla", "English", "Hindi"]
+        // }
+        // console.log(Student1.Name);
+
+        //create a tamplate by a constructor. by this template creat multiple object. and for print thease objects. create a function inside of the constructor.
+        function Student(name, age, cgpa, lang){
+            this.name = name; //name a je info pass hosse ta this.           name a store hosse
+            this.age = age;
+            this.cgpa = cgpa;
+            this.lang = lang;
+
+            //for printing create a fungtion inside of this constructor
+            this.display = function(){
+                console.log("Name: " + this.name);
+                console.log("Age: " + this.age);
+                console.log("Cgpa: " + this.cgpa);
+                console.log("Language: " + this.lang);
+
+            }
+
+        };
+        // ai object we ifo gulo ai function er moddhe pass kora hosse.
+        var student1 = new Student("Imam", 30, 4.25, ["Bangla", "English", "Hindi", "Urdu"]);
+        var student2 = new Student("Farhana", 21, "5.00", ["English", "Bnagla", "Urdu"]);
+        var student3 = new Student("Julhash", 29, "4.50", ["Bangla", "Hindi", "Urdu"]);
+        //for printing call the function
+        student1.display();
+        student2.display();
+        student3.display();
+        
+        
+    </script>
+</body>
+</html>

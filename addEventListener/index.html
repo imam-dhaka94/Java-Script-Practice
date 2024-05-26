@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass{
+            color: red;
+            font-size: 5rem;
+            font-style: italic;
+            text-shadow: 0px 5px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me</button>
+    <h1>Jannatul Afrin Ismita</h1>
+    <p></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/j5JtyoF3gqw?si=DNcix9shKyojtlEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script>
+        var btn = document.querySelector("button");
+        btn.addEventListener("click", msgbox);
+        btn.style.margin= "10px";
+        function msgbox(){
+            alert("Hellow!");
+
+        };
+
+        var ismita = btn.nextElementSibling;
+        ismita.style.margin= "100px";
+
+        ismita.addEventListener("mouseover", function(){
+            ismita.classList.add("myclass");
+        });
+        ismita.addEventListener("mouseout", function(){
+            ismita.classList.remove("myclass");
+        })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task9</title>
+</head>
+<body>
+    <script>
+        //create a function call highestRunscorer that will received 2 dimensional array called playersInfo. Based on highest score, return the name of the player.
+        function highestRunscorer(playersInfo){
+            var highestscorer = playersInfo[0][0];
+            var highestscore = playersInfo [0][1];
+            for(var x=1; x<playersInfo.lenght; x++){
+                        //sob scorer er col index no 1
+                if(highestscore<playersInfo[x][1]){
+                    highestscore = [x][1];
+                    highestscorer = [x][0];
+                }
+            }
+            return highestscorer;
+           
+        }
+        var playersInfo = [
+            ["Sakib", 29],
+            ["Mushfiq", 77],
+            ["Mahmudullah", 33],
+            ["Mashrafee",97],
+            ["Tamim Iqbal", 60]
+        ];
+        var nam = highestRunscorer(playersInfo);
+        console.log("Highest Scorer = ".concat(nam));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function highestRunscorer(playersInfo){
+        //     var max = playersInfo[0][1];
+        //     for(var x=1; x<5; x++){
+        //         for(var y=0; y<2; y++){
+        //             if(max>playersInfo[x][y]){
+        //                 max = playersInfo[x][y];
+        //             }
+        //         }
+        //     }
+        //     return max;
+        // }
+        // var playersInfo = [
+        //     ["Sakib", 29],
+        //     ["Mushfiq", 77],
+        //     ["Mahmudullah", 33],
+        //     ["Mashrafee",97]
+        // ];
+        // var maxRuner = highestRunscorer(playersInfo);
+        // console.log(maxRuner);
+    </script>
+</body>
+</html>

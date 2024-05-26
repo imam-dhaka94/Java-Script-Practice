@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+</head>
+<body>
+    <button onclick="buttorn1()">click me 1</button>
+    <button onclick="button2()">click me 2</button>
+    <p id="Pid"></p>
+    <script>
+        var newvar = document.getElementById("Pid");
+        function buttorn1(){
+            newvar.innerHTML = "You have clicked the first button";
+        };
+        function button2(){
+            newvar.innerHTML = "You have cliced the second button";
+        }
+    </script>
+</body>
+</html>

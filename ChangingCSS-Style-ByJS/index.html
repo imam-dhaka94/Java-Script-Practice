@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Style by Js</title>
+    <style>
+        .headingStyle{
+            font-size: 4rem;
+            color: red;
+            font-style: italic;
+            text-shadow: 0px 2px 5px rgb(66, 25, 25);
+        }
+        button{
+            padding: 5px;
+            margin: 40px 25px ;
+        }
+        h1{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imam Hossain</h1>
+    <button onclick="add()">Add Style</button>
+    <button onclick="remove()">Remove Style</button>
+    <p></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tApvPAkjJxg?si=qU9nHtYxzxnETIvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <script>
+        var heading = document.getElementsByTagName("h1")[0];
+        function add(){
+            heading.classList.add("headingStyle");
+        };
+        function remove(){
+            heading.classList.remove("headingStyle");
+        }
+    </script>
+</body>
+</html>

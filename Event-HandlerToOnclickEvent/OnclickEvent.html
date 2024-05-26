@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclik Event</title>
+    <style>
+        #imgid{
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+            border: 1px solid black;
+            position: relative;
+            left: 40px;
+            
+        }
+        button{
+            margin: 20px;
+            color: white;
+            font-size: 18px;
+            background-color: black;
+            outline: auto;
+            outline-offset: 2px;
+            padding: 10px;
+            border: 1px solid rgb(54, 54, 25);
+            box-shadow: 3px 3px 3px 1px black;
+        }
+        button:active{
+            
+            background-color: rgb(209, 41, 41);
+            color: rgb(240, 236, 23);
+        }
+
+    </style>
+</head>
+<body>
+
+   
+    <button onclick="imam()">Father</button>
+    <button onclick="ismita()">Doughter</button>
+    <p></p>
+    <img src="" alt="click the button to show the image" id="imgid">
+    <br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IPIMaAY2cHY?si=opnsRUJ04XVtLTq1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script>
+        var myVar = document.querySelector("#imgid");
+        function imam(){
+            myVar.src="images/imam.jpeg";
+        }
+        function ismita(){
+            myVar.src="images/ismita.jpg";
+        }
+    </script>
+</body>
+</html>

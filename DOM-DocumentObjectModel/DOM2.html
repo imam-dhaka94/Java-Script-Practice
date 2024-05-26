@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+
+    </ul>
+    <div id="newdiv">
+        <a href="#">contact</a>
+    </div>
+    <p>this is peragraph1</p>
+    <p>this is a peragraph2</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zNTLnGmXKnc?si=GlPcIa5fJd_YATBK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+
+    <script>
+        document.querySelector("li a").innerHTML= "text changed";
+        document.querySelector("#newdiv a").innerHTML= "changed contact";
+        document.querySelectorAll("p")[0].innerHTML= "changed p 1";
+        document.querySelectorAll("p")[1].innerHTML= "changed p2";
+
+
+    </script>
+</body>
+</html>
