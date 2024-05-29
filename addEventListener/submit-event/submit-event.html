@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+        #submit{
+            margin: 10px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Name: 
+                <input type="text" id="name" class="name" name="name" required autofocus>
+            </label>
+        </div>
+        <div>
+            <label for="email">Email: 
+                <input type="email" id="email" class="email" name="email" required>
+            </label>
+        </div>
+        <div>
+            <label for="password">Password
+                <input type="password" id="password" class="password" name="password" required>
+            </label>
+        </div>
+        <input type="submit" id="submit">
+    </form><br>
+
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ogo2thobQFQ?si=GZj6u790ort5WVME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <script>
+       var form = document.querySelector("form");
+       var div = form.firstElementChild;
+       var label = div.firstElementChild;
+       var name = label.firstElementChild;
+       console.log(name);
+       var email = form.querySelector("div .email");
+       var password = form.querySelector("div .password");
+
+       form.addEventListener("submit", formHandler);
+       function formHandler(e){
+        e.preventDefault();
+        var userinfo = {
+            name: name.value,
+            email: email.value,
+            password: password.value
+        };
+
+        console.log(userinfo);
+        name.value= "";
+        email.value= "";
+        password.value= "";
+
+       };
+       
+
+       
+    </script>
+</body>
+</html>

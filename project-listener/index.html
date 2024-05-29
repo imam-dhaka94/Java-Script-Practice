@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 90px;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            background-color: bisque;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            outline: 2px solid greenyellow;
+            border-radius: 40px;
+        }
+        button:active{
+            border: 1px solid red;
+            background-color: rgb(228, 155, 155);
+        }
+
+        .anim{
+            box-shadow: 0px 3px 8px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <button class="mybutton A">A</button>
+    <button class="mybutton B">B</button>
+    <button class="mybutton C">C</button>
+    <button class="mybutton D">D</button>
+    <button class="mybutton E">E</button>
+    <button class="mybutton F">F</button>
+    <button class="mybutton G">G</button>
+    <button class="mybutton H">H</button>
+    <button class="mybutton I">I</button>
+    <button class="mybutton J">J</button>
+    <button class="mybutton K">K</button>
+    <button class="mybutton L">L</button>
+    <button class="mybutton M">M</button>
+    <button class="mybutton N">N</button>
+    <button class="mybutton O">O</button>
+    <button class="mybutton P">P</button>
+    <button class="mybutton Q">Q</button>
+    <button class="mybutton R">R</button>
+    <button class="mybutton S">S</button>
+    <button class="mybutton T">T</button>
+    <button class="mybutton U">U</button>
+    <button class="mybutton V">V</button>
+    <button class="mybutton W">W</button>
+    <button class="mybutton X">X</button>
+    <button class="mybutton Y">Y</button>
+    <button class="mybutton Z">Z</button>
+
+    <script>
+        var len = document.querySelectorAll(".mybutton").length;
+        for(var i=0; i<len; i++){
+            var btn = document.querySelectorAll(".mybutton")[i];
+            btn.addEventListener("click", function(){
+                var text = this.innerHTML;
+                console.log(text);
+                audioplay(text);
+                playAnim(text);
+            })
+        };
+
+
+        document.addEventListener("keypress", function(event){
+            var text = event.key;
+            audioplay(text);
+            playAnim(text);
+        });
+
+        function playAnim(text){
+            var selectedBtn = document.querySelector("."+text);
+            selectedBtn.addEventListener("click", function(){
+                selectedBtn.classList.add("anim");
+            });
+            
+            setTimeout(function(){
+                selectedBtn.classList.remove("anim");
+            }, 1000);
+        };
+
+        
+        // var plays = ["sounds/a.mp3", "sounds/b.mp3", "sounds/c.mp3", "sounds/d.mp3", "sounds/e.mp3", "sounds/f.mp3", "sounds/g.mp3", "sounds/h.mp3", "sounds/i.mp3", "sounds/j.mp3", "sounds/k.mp3", "sounds/l.mp3", "sounds/m.mp3", "sounds/n.mp3", "sounds/o.mp3", "sounds/p.mp3", "sounds/q.mp3", "sounds/r.mp3", "sounds/s.mp3", "sounds/t.mp3", "sounds/u.mp3", "sounds/v.mp3", "sounds/w.mp3", "sounds/x.mp3", "sounds/y.mp3", "sounds/z.mp3",];
+
+        // var len2 = plays.lenght;
+            function audioplay(text){
+                
+                // for(var x=0; x<len2; x++){
+                // var sound = plays[x];
+                switch(text){
+                    case "A":
+                        var audio = new Audio("sounds/a.mp3");
+                        audio.play();
+                        break;
+                    case "B":
+                        var audio = new Audio("sounds/b.mp3");
+                        audio.play();
+                        break;
+                    case "C":
+                        var audio = new Audio("sounds/c.mp3");
+                        audio.play();
+                        break;
+                    case "D":
+                        var audio = new Audio("sounds/d.mp3");
+                        audio.play();
+                        break;
+                    case "E":
+                        var audio = new Audio("sounds/e.mp3");
+                        audio.play();
+                        break;
+                    case "F":
+                        var audio = new Audio("sounds/f.mp3");
+                        audio.play();
+                        break;
+                    case "G":
+                        var audio = new Audio("sounds/g.mp3");
+                        audio.play();
+                        break;
+                    case "H":
+                        var audio = new Audio("sounds/h.mp3");
+                        audio.play();
+                        break;
+                    case "I":
+                        var audio = new Audio("sounds/i.mp3");
+                        audio.play();
+                        break;
+                    case "J":
+                        var audio = new Audio("sounds/j.mp3");
+                        audio.play();
+                        break;
+                    case "K":
+                        var audio = new Audio("sounds/k.mp3");
+                        audio.play();
+                        break;
+                    case "L":
+                        var audio = new Audio("sounds/l.mp3");
+                        audio.play();
+                        break;
+                    case "M":
+                        var audio = new Audio("sounds/m.mp3");
+                        audio.play();
+                        break;
+                    case "N":
+                        var audio = new Audio("sounds/n.mp3");
+                        audio.play();
+                        break;
+                    case "O":
+                        var audio = new Audio("sounds/o.mp3");
+                        audio.play();
+                        break;
+                    case "P":
+                        var audio = new Audio("sounds/p.mp3");
+                        audio.play();
+                        break;
+                    case "Q":
+                        var audio = new Audio("sounds/q.mp3");
+                        audio.play();
+                        break;
+                    case "R":
+                        var audio = new Audio("sounds/r.mp3");
+                        audio.play();
+                        break;
+                    case "S":
+                        var audio = new Audio("sounds/s.mp3");
+                        audio.play();
+                        break;
+                    case "T":
+                        var audio = new Audio("sounds/t.mp3");
+                        audio.play();
+                        break;
+                    case "U":
+                        var audio = new Audio("sounds/u.mp3");
+                        audio.play();
+                        break;
+                    case "V":
+                        var audio = new Audio("sounds/v.mp3");
+                        audio.play();
+                        break;
+                    case "W":
+                        var audio = new Audio("sounds/w.mp3");
+                        audio.play();
+                        break;
+                    case "X":
+                        var audio = new Audio("sounds/x.mp3");
+                        audio.play();
+                        break;
+                    case "Y":
+                        var audio = new Audio("sounds/y.mp3");
+                        audio.play();
+                        break;
+                    case "Z":
+                        var audio = new Audio("sounds/z.mp3");
+                        audio.play();
+                        break;
+                        
+                            
+                
+                        
+                       
+                    
+                }
+            }; 
+        
+    </script>
+</body>
+</html>
